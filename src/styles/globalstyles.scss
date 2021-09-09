@@ -1,0 +1,19 @@
+@import "./variables";
+@import "../components/TodosContainer/todolistwrapper";
+@import "../components/TodosForm/todosform";
+@import "../components/TodosList/todolist";
+@import "../components/Checkbox/todo";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $white;
+  font-family: $font;
+}

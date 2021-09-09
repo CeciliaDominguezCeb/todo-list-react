@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.todolist-wrapper {
+  border: 5px solid $lavenderblue;
+  box-shadow: 18px 14px 0px 2px $lavenderblue;
+  inline-size: 60vw;
+  margin: 50px auto;
+  min-block-size: 80vh;
+}
+
+.title {
+  color: $lavenderblue;
+  font-family: "Cutive Mono", monospace;
+  font-size: 35px;
+  text-align: center;
+}

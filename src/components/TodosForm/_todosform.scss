@@ -1,0 +1,61 @@
+@import "../../styles/variables";
+
+.todos-form {
+  aspect-ratio: 16/9;
+  block-size: 100px;
+  inline-size: 100%;
+  padding: 20px;
+}
+.todos-container {
+  display: flex;
+  justify-content: center;
+}
+.todos-input {
+  align-items: center;
+  display: flex;
+  inline-size: 90%;
+  justify-content: center;
+  input {
+    background-color: $white;
+    block-size: 40px;
+    border: 2px solid $lavenderblue;
+    box-shadow: 8px 6px 0px 0px $lavenderblue;
+    color: $lightlavenderblue;
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 800;
+    inline-size: 100%;
+    outline: none;
+    transition: all 0.5s;
+    &::placeholder {
+      color: $lavenderblue;
+    }
+    &:hover {
+      background-color: $lightpink;
+    }
+  }
+  .add-btn {
+    background-color: $lightpink;
+    block-size: 40px;
+    border: 2px solid $lavenderblue;
+    box-shadow: 8px 6px 0px 0px $lavenderblue;
+    color: $lightlavenderblue;
+    cursor: pointer;
+    font-family: $font;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0 15px;
+    transition: all 0.5s;
+    width: 70px;
+    &:disabled {
+      color: rgba(134, 138, 141, 0.4);
+      cursor: not-allowed;
+    }
+    &:hover {
+      background-color: $lavenderblue;
+      border: 2px solid $lightpink;
+      box-shadow: 8px 6px 0px 0px $lightpink;
+      color: $white;
+    }
+  }
+}
