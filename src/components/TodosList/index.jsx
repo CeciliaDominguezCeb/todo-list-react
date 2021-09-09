@@ -13,8 +13,8 @@ export const TodosList = ({ addTodos, setAddTodos }) => {
     setAddTodos(updateTodos);
   };
 
-  const deleteTodo = () => {
-    const updateTodos = addTodos.filter((item) => !item.done);
+  const deleteTodo = (id) => {
+    const updateTodos = addTodos.filter((item) => item.id !== id);
     setAddTodos(updateTodos);
   };
 

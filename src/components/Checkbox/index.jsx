@@ -40,7 +40,7 @@ export const Checkbox = ({ data, handleChange, deleteTodo, editTodo }) => {
               setEdit({ id: id, value: value });
             }}
           ></i>
-          <i className="fas fa-window-close" onClick={deleteTodo}></i>
+          <i className="fas fa-window-close" onClick={() => deleteTodo(id)}></i>
         </div>
       </div>
     </>
